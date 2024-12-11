@@ -1,22 +1,121 @@
-h1{
-    background-color: rgb(179, 229, 229);
-    border-radius: 80px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Resetando margens e paddings para garantir que a página tenha um estilo consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #00bcd4;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-
-}
-p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-}
-p1{
-    background-color: aquamarine;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;    
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
-p2{
-    background-color: aquamarine;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: right;
+header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .intro {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Estilo das imagens */
+.imagem,
+.imagem2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.imagem img,
+.imagem2 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções de categorias */
+.categorias {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.categorias h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categorias li {
+    margin: 10px;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: #00796b;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.categorias a:hover {
+    color: #004d40;
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .categorias h2 {
+        font-size: 1.5rem;
+    }
+
+    .categorias a {
+        font-size: 1rem;
+    }
 }
