@@ -66,6 +66,12 @@ padding-top: 10px;
     color: #00796b;
 }
 
+.introyou  {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00796b;  
+}
+
 .categorias ul {
     list-style: none;
     padding: 0;
