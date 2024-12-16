@@ -8,8 +8,10 @@
     <!-- Link para o Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&libraries=places" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet"></script> <!-- Opcional para pesquisas -->
     <script src="script.js" defer></script>
+    
 </head>
 
 <body>
@@ -26,12 +28,20 @@
         <section class="categorias">
 
             <p class="introyou">Onde você esta?</p>
-            
+            <button id="getLocation">Usar minha localização</button>
+    <input type="text" id="localInput" placeholder="Digite um endereço ou cidade">
+    <button id="searchLocation">Buscar</button>
+    <div id="map" style="height: 500px; margin-top: 20px; border: 1px solid #ccc;"></div>
+
+  
             
             <h2>Onde você deseja saber mais?</h2>
             <ul>
-                <li><a href="#">Onde Comer?</a></li>
-                <li><a href="#">Onde Ficar?</a></li>
+                <li><button class="filter-button" data-type="restaurant">Onde Comer?</button></li>
+                <li><button class="filter-button" data-type="lodging">Onde Ficar?</button></li>
+                <li><button class="filter-button" data-type="tourist_attraction">Onde Ir?</button></li>
+
+                
                 <li><a href="#">Onde Ir?</a></li>
                 <li><a href="#">Onde Comprar?</a></li>
                 <li><a href="#">Aeroportos?</a></li>
