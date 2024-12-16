@@ -57,6 +57,7 @@ header .intro {
 .categorias {
     text-align: center;
     margin: 40px 0;
+padding-top: 10px;
     }
 
 .categorias h2 {
