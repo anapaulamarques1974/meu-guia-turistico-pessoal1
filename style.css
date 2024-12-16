@@ -57,7 +57,7 @@ header .intro {
 .categorias {
     text-align: center;
     margin: 40px 0;
-}
+    }
 
 .categorias h2 {
     font-size: 1.8rem;
@@ -88,6 +88,7 @@ header .intro {
 
 .categorias a:hover {
     color: #004d40;
+    
 }
 
 /* Estilo do footer */
