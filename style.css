@@ -12,7 +12,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     padding: 0 20px;
-    max-width: 1200px;
+    max-width: 2200px;
     margin: auto;
 }
 
@@ -28,12 +28,12 @@ header {
 
 header h1 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom: 10px;
 }
 
 header .intro {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
@@ -41,18 +41,23 @@ header .intro {
 .imagem,
 .imagem2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-.imagem img,
-.imagem2 img {
-    width: 100%;
-    max-width: 600px;
+.imagem img {
+    width: 150%;
+    max-width: 1000px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.imagem2 img {
+    width: 25%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 /* Estilo das seções de categorias */
 .categorias {
     text-align: center;
@@ -61,17 +66,20 @@ padding-top: 10px;
     }
 
 .categorias h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
     color: #00796b;
 }
 
 .introyou  {
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     margin-bottom: 20px;
     color: #00796b; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
+
+
+
 
 .categorias ul {
     list-style: none;
@@ -84,12 +92,13 @@ padding-top: 10px;
 
 .categorias li {
     margin: 10px;
+
 }
 
 .categorias a {
     text-decoration: none;
     color: #00796b;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     transition: color 0.3s ease;
 }
