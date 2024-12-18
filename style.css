@@ -12,8 +12,19 @@ body {
     background-color: #f0e9d3;
     color: #333;
     padding: 0 20px;
-    max-width: 2200px;
-    margin: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustando a local */
+.local {
+    text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Estilo do cabeçalho */
@@ -23,89 +34,103 @@ header {
     padding: 20px 0;
     text-align: center;
     border-radius: 10px;
-    margin: 20px 0;
+    width: 100%;
+    margin-top: 20px;
 }
 
 header h1 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 4.5rem;
+    font-size: 7.5rem;
     margin-bottom: 10px;
 }
 
 header .intro {
-    font-size: 2.2rem;
-    font-weight: 400;
+    font-size: 3.8rem;
+    font-weight: 500;
 }
 
 /* Estilo das imagens */
 .imagem,
 .imagem2 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.imagem img {
-    width: 150%;
-    max-width: 1000px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+.imagem img,
 .imagem2 img {
-    width: 25%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 /* Estilo das seções de categorias */
 .categorias {
     text-align: center;
     margin: 40px 0;
-padding-top: 10px;
-    }
+    padding-top: 20px;
+}
 
 .categorias h2 {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     margin-bottom: 20px;
     color: #00796b;
 }
 
-.introyou  {
-    font-size: 2.7rem;
+.introyou {
+    font-size: 4.5rem;
     margin-bottom: 20px;
-    color: #00796b; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: #00796b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Ajustes para o mapa */
+.map-container {
+    width: 100%;
+    max-width: 1200px;  /* Definir uma largura máxima */
+    height: 500px;      /* Altura do mapa */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%; /* Faz o mapa ocupar toda a altura da div */
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-
-
+/* Filtros e botões */
 .categorias ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .categorias li {
     margin: 10px;
-
 }
 
-.categorias a {
-    text-decoration: none;
-    color: #00796b;
-    font-size: 1.8rem;
-    font-weight: 700;
-    transition: color 0.3s ease;
+.categorias button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.categorias a:hover {
-    color: #004d40;
-    
+.categorias button:hover {
+    background-color: #004d40;
 }
 
 /* Estilo do footer */
@@ -117,23 +142,24 @@ footer {
     color: white;
     border-radius: 5px;
     font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
+    width: 100%;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .categorias h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
-    .categorias a {
-        font-size: 1rem;
+    .categorias button {
+        font-size: 1.2rem;
+    }
+
+    .map-container {
+        height: 200px;
     }
 }

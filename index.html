@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Guia Turístico</title>
-    <!-- Link para o Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/esri-leaflet"></script> <!-- Opcional para pesquisas -->
+    <script src="https://unpkg.com/esri-leaflet"></script>
     <script src="script.js" defer></script>
-    
 </head>
 
 <body>
@@ -26,26 +24,23 @@
         </section>
 
         <section class="categorias">
+            <p class="introyou">Onde você está?</p>
+            <div class="local">
+                <button id="getLocation">Usar minha localização</button>
+                <input type="text" id="localInput" placeholder="Digite um endereço ou cidade">
+                <button id="searchLocation">Buscar</button>
+            </div>
 
-            <p class="introyou">Onde você esta?</p>
-            <button id="getLocation">Usar minha localização</button>
-    <input type="text" id="localInput" placeholder="Digite um endereço ou cidade">
-    <button id="searchLocation">Buscar</button>
-    <div id="map" style="height: 500px; margin-top: 20px; border: 1px solid #ccc;"></div>
+            <!-- Mapa Container -->
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
 
-  
-            
-            <h2>Onde você deseja saber mais?</h2>
+            <h2>O que você deseja saber mais?</h2>
             <ul>
                 <li><button class="filter-button" data-type="restaurant">Onde Comer?</button></li>
                 <li><button class="filter-button" data-type="lodging">Onde Ficar?</button></li>
                 <li><button class="filter-button" data-type="tourist_attraction">Onde Ir?</button></li>
-
-                
-                <li><a href="#">Onde Ir?</a></li>
-                <li><a href="#">Onde Comprar?</a></li>
-                <li><a href="#">Aeroportos?</a></li>
-                <li><a href="#">Transporte Público?</a></li>
             </ul>
         </section>
 
